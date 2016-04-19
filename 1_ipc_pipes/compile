@@ -1,5 +1,5 @@
 #!/bin/bash
 
 echo "Compiling..."
-gcc pipes.c -o pipe
-echo "Usage: ./pipe"
+gcc pipes.c -o pipe.o
+echo "Usage: ./pipe.o"

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "Compiling Server.."
+gcc server.c -o server.o
+echo "Compiling Client.."
+gcc client.c -o client.o
+echo "Run ./server.o and ./client.o in separate tabs"

@@ -39,3 +39,23 @@ $ ./pipes
 [CLIENT] Processing request
 [SERVER] Cannot open file
 ```
+
+### System calls used
+
+```c
+#include <unistd.h>
+int pipe(int fd[2]);
+// Returns: 0 if OK, −1 on error
+```
+
+```c
+#include <unistd.h>
+ssize_t read(int fd, void *buf, size_t nbytes);
+// Returns: number of bytes read, 0 if end of file, −1 on error
+```
+
+```c
+#include <unistd.h>
+ssize_t write(int fd, const void *buf, size_t nbytes);
+// Returns: number of bytes written if OK, −1 on error
+```
