@@ -9,7 +9,7 @@ Client - Pipe 1 WRITE, Pipe2 READ
 
 ### Compile
 ```bash
-$ gcc pipes.c -o pipes
+$ gcc pipes.c -o pipes.o
 ```
 
 ### Sample file
@@ -22,7 +22,7 @@ read
 
 ### Run program
 ```bash
-$ ./pipes
+$ ./pipes.o
 [CLIENT] Client online
 [CLIENT] Pathname of file: hello.txt
 [CLIENT] Server Online
