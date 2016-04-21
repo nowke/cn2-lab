@@ -8,6 +8,6 @@
 6. Link state algorithm
 7. [CRC](7_crc) ( [crc.c](7_crc/crc.c) )
 8. [Internet Checksum](8_checksum) ( [checksum.c](8_checksum/checksum.c) )
-9. Hamming Code
+9. [Hamming Code](9_hamming) ( [hamming.c](9_hamming/hamming.c) )
 10. [Leaky Bucket](10_leaky) ( [leaky.c](10_leaky/leaky.c) )
 11. [Multicast routing](11_multicast) ( [server.c](11_multicast/server.c) | [client.c](11_multicast/client.c) )
