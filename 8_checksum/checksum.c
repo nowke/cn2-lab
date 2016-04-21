@@ -1,3 +1,6 @@
+/*
+ * Internet Checksum
+ */
 #include <stdio.h>
 #include <math.h>
 

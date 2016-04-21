@@ -1,3 +1,6 @@
+/*
+ * Leaky Bucket algorithm
+ */
 #include <stdio.h>
 #include <unistd.h>
 
