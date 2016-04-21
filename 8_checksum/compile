@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Compiling..."
+gcc checksum.c -lm -o checksum.o
+echo "Usage: ./checksum.o"

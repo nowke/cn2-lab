@@ -34,3 +34,5 @@ Node 1 via 2, Distance 3
 Node 2 via 2, Distance 1
 Node 3 via 3, Distance 0
 ```
+
+Source: [TheLearningPoint](http://www.thelearningpoint.net/computer-science/c-program-distance-vector-routing-algorithm-using-bellman-ford-s-algorithm)

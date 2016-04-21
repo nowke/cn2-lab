@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Compiling..."
+gcc leaky.c -o leaky.o
+echo "Usage: ./leaky.o"

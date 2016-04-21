@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Compiling..."
+gcc hamming.c -o hamming.o
+echo "Usage: ./hamming.o"

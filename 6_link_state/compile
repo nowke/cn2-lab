@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Compiling..."
+gcc link.c -o link.o
+echo "Usage: ./link.o"
