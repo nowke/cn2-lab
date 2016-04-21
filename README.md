@@ -6,7 +6,7 @@
 4. [Sockets](4_sockets) ( [server.c](4_sockets/server.c) | [client.c](4_sockets/client.c) )
 5. [Distance Vector](5_distance_vector) ( [distance.c](5_distance_vector/distance.c) )
 6. Link state algorithm
-7. [CRC](7_crc) ( [crc.c](7_crc/crc.c) )
+7. [CRC](7_crc) ( [crc.c](7_crc/crc.c) ) 
 8. [Internet Checksum](8_checksum) ( [checksum.c](8_checksum/checksum.c) )
 9. [Hamming Code](9_hamming) ( [hamming.c](9_hamming/hamming.c) )
 10. [Leaky Bucket](10_leaky) ( [leaky.c](10_leaky/leaky.c) )
