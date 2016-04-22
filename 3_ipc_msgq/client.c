@@ -23,7 +23,7 @@ typedef struct msgbuf {
 
 int main() {
     int msqID1, msqID2;
-    int msgflag = IPC_CREAT | 0666;
+    int msgflag = 0666;
 
     key_t key1, key2;
     size_t buf_length;

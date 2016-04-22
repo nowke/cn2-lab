@@ -25,7 +25,7 @@ char buffer[1024];
 
 int main() {
     int readfd, writefd, fd;
-    ssize_t n;
+    int n;
 
     // Make FIFOs
     mkfifo(FIFO1, PERMS);
@@ -33,8 +33,8 @@ int main() {
     printf("[SERVER] Created FIFO files\n");
 
     // Open connection
-    readfd  = open(FIFO1, O_RDONLY, 0);
-    writefd = open(FIFO2, O_WRONLY, 0);
+    readfd  = open(FIFO1, O_RDONLY);
+    writefd = open(FIFO2, O_WRONLY);
     printf("[SERVER] Connection Established\n");
 
     // Read from client (blocking call)
@@ -42,7 +42,7 @@ int main() {
     printf("[SERVER] Client requests file: %s\n", fname);
 
     // Read the file if exists
-    if ((fd = open(fname, O_RDWR)) < 0) {
+    if ((fd = open(fname, O_RDONLY)) < 0) {
         // File not exists
         strcpy(buffer, "File does not exists!\n");
         write(writefd, buffer, strlen(buffer));

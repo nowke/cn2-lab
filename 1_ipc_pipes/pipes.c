@@ -19,13 +19,13 @@ void client(int readfd, int writefd) {
  */
     printf("[CLIENT] Client online\n");
     printf("[CLIENT] Pathname of file: ");
-    fflush(stdout);
-    fgets(buffer, sizeof(buffer), stdin); // `buffer` contains `filename`
+    
+    scanf("%s", buffer);
 
     printf("[CLIENT] Server Online\n");
     printf("[CLIENT] Processing request\n");
 
-    write(writefd, buffer ,sizeof(buffer));
+    write(writefd, buffer ,strlen(buffer));
 
     // Read from server
     while (read(readfd, buffer, sizeof(buffer)) > 0)
@@ -40,10 +40,8 @@ void server(int readfd, int writefd) {
  */
     FILE* f;
     char line[MAX];
-
+    
     read(readfd, buffer, sizeof(buffer));
-    if (strchr(buffer, '\n'))
-        *strchr(buffer, '\n') = 0;
 
     f = fopen(buffer, "r");
 

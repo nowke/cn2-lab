@@ -28,7 +28,7 @@ int main() {
     // Create server address
     server_addr.sin_family = AF_INET; // IPv4
     server_addr.sin_addr.s_addr = htons(INADDR_ANY);
-    server_addr.sin_port = htons(SERV_PORT); // 3000
+    server_addr.sin_port = htons(SERV_PORT); // 5600
     printf("[SERVER] Created socket\n");
 
     // Bind socket
@@ -43,7 +43,6 @@ int main() {
     listen(sockfd, 8);
 
     // Accept client request
-    client_len = sizeof(struct sockaddr_in);
     client_fd = accept(sockfd,
                        (struct sockaddr *) &client_addr,
                        &client_len);
@@ -71,7 +70,7 @@ int main() {
         // write file contents to client
         write(client_fd, buff, n);
 
-        printf("[SERVER] Transfer successfull\n");
+        printf("[SERVER] Transfer successful\n");
     }
 
     close(client_fd);

@@ -29,8 +29,8 @@ int main() {
 
     printf("[CLIENT] Connecting to Server\n");
 
-    writefd = open(FIFO1, O_WRONLY, 0);
-    readfd  = open(FIFO2, O_RDONLY, 0);
+    writefd = open(FIFO1, O_WRONLY);
+    readfd  = open(FIFO2, O_RDONLY);
     printf("[CLIENT] Connected to server\n");
 
     // Get filename from user
@@ -43,7 +43,7 @@ int main() {
 
     // Read content (blocking call)
     while ((n = read(readfd, buffer, 1024)) > 0)
-        write(1, buffer, n); // '1' for stdout
+        printf("%s", buffer);
 
     close(readfd);
     close(writefd);

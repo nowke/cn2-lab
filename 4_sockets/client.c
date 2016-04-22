@@ -20,7 +20,7 @@ int main() {
     // Build the server address structure
     server_addr.sin_family = AF_INET; // IPv4
     server_addr.sin_addr.s_addr = inet_addr(SERV_ADDR); // 127.0.0.1
-    server_addr.sin_port = htons(SERV_PORT); // 3000
+    server_addr.sin_port = htons(SERV_PORT); // 5600
 
     // Create socket
     sockfd = socket(AF_INET, SOCK_STREAM, 0);

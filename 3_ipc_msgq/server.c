@@ -27,8 +27,8 @@ int main() {
     int msqID1, msqID2;
     int f, filesize, n;
 
-    key_t key1, key2;
-    size_t buf_length;
+    int key1, key2;
+    int buf_length;
     message_buf buf;
 
     /* Assign unique key for both message queues */
