@@ -16,15 +16,8 @@ read
 ```
 
 ### Run Program
+
 #### TAB 1
-```bash
-$ ./server.o
-[SERVER] Input message queue opened
-[SERVER] Waiting for client
-[SERVER] Output message queue opened
-[SERVER] File contents sent to client
-```
-#### TAB 2
 ```bash
 $ ./client.o
 [CLIENT] Ouput msgq opened
@@ -35,6 +28,15 @@ Enter filename: hello.txt
 This is a
 sample file to be
 read
+```
+
+#### TAB 2
+```bash
+$ ./server.o
+[SERVER] Input message queue opened
+[SERVER] Waiting for client
+[SERVER] Output message queue opened
+[SERVER] File contents sent to client
 ```
 
 ### System calls used
