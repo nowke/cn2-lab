@@ -15,7 +15,7 @@
  * 1. Receieve `filename` on key1 (of Type 1)
  * 2. read the file & copy file contents into `buf.mText`
  * 3. Make `buf` of Type 2 - buf.mType = 2
- * 4. Send `buf` through key2 
+ * 4. Send `buf` through key2
  */
 
 typedef struct msgbuf {
@@ -27,8 +27,8 @@ int main() {
     int msqID1, msqID2;
     int f, filesize, n;
 
-    int key1, key2;
-    int buf_length;
+    key_t key1, key2;
+    size_t buf_length;
     message_buf buf;
 
     /* Assign unique key for both message queues */
